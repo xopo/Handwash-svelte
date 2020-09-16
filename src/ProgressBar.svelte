@@ -16,7 +16,6 @@
         bp='offset-5@md 4@md 12@sm'
         class='progress-container'>
         <div class="progress-bar" style={`width: ${progress}%`}>
-            Wash your time for
             <span class='sr-only'>{progress}%</span>
         </div>
 

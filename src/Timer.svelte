@@ -1,8 +1,9 @@
 <script>
-    import { onDestroy } from 'svelte';
+    import { onDestroy, createEventDispatcher } from 'svelte';
     import ProgressBar from "./ProgressBar.svelte";
     
-    const totalSeconds = 20;
+    const totalSeconds = 2;
+    const dispatch = createEventDispatcher();
     
     let progress = 0;
     let secondLeft = totalSeconds;
@@ -18,6 +19,7 @@
                 clearInterval(timer);
                 secondLeft = totalSeconds;
                 disableButton = false;
+                dispatch('wash_complete', 'play')
             }
         }, 1000);
     }
