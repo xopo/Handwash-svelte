@@ -1,5 +1,5 @@
 <script>
-    export let progress = 5;
+    export let progress = 25;
 </script>
 <style>
     .progress-container {
@@ -16,7 +16,6 @@
         bp='offset-5@md 4@md 12@sm'
         class='progress-container'>
         <div class="progress-bar" style={`width: ${progress}%`}>
-            Wash your time for
             <span class='sr-only'>{progress}%</span>
         </div>
 
