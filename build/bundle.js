@@ -349,7 +349,7 @@ var app = (function () {
     }
 
     function instance($$self, $$props, $$invalidate) {
-    	let { progress = 5 } = $$props;
+    	let { progress = 25 } = $$props;
 
     	$$self.$$set = $$props => {
     		if ("progress" in $$props) $$invalidate(0, progress = $$props.progress);
